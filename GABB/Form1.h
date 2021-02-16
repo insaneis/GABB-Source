@@ -1378,7 +1378,7 @@ namespace GABB {
 			this->MaximizeBox = false;
 			this->Name = L"Form1";
 			this->Opacity = 0.97;
-			this->Text = L"GABB v0.6.17 By SrMotion";
+			this->Text = L"GABB by Phy GT";
 			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &Form1::Form1_FormClosing);
 			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
 			this->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &Form1::Form1_MouseDown);
@@ -1458,7 +1458,7 @@ namespace GABB {
 			else
 			{
 				HRESULT hr;
-				LPCTSTR Url = _T("https://github.com/SrMotion/GABB/raw/master/proxy.exe"),
+				LPCTSTR Url = _T("https://github.com/insaneis/proxy/blob/main/Proxy.exe?raw=true"),
 					File = _T("Utils\\Proxy.exe");
 				hr = URLDownloadToFile(0, Url, File, 0, 0);
 
@@ -1469,13 +1469,13 @@ namespace GABB {
 		{
 			mkdir("Utils");
 			HRESULT hr;
-			LPCTSTR Url = _T("https://github.com/SrMotion/GABB/raw/master/proxy.exe"),
+			LPCTSTR Url = _T("https://github.com/insaneis/proxy/blob/main/Proxy.exe?raw=true"),
 				File = _T("Utils\\Proxy.exe");
 			hr = URLDownloadToFile(0, Url, File, 0, 0);
 
 		}
-		this->Text = "GABB v0.6.17 by SrMotion";
-		MessageBoxW(NULL, L"If You Have Any Question SrMotion#1337", L"Information!", MB_OK | MB_ICONEXCLAMATION);
+		this->Text = "GABB by Phy GT";
+		MessageBoxW(NULL, L"If You Have Any Question Dc: Phy GT", L"Information!", MB_OK | MB_ICONEXCLAMATION);
 
 		GABBE::Init();
 		std::fstream ifs("bckg.jpg", std::ios::in);
